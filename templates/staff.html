@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+
+Welcome {{ staff}}
+
+<h3> Name: {{staff.user.firstname}} {{staff.user.lastname}}</h3>
+
+<li>
+<ul><a href = "/staff/staff_registration">Register Staff</a></ul>
+<ul><a href = "/student/register_student">Register Student</a></ul>
+<ul><a href = "/teacher/register_teacher">Register Teacher</a></ul>
+</li>
+
+{% endblock body_block %}

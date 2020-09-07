@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block body_block %}
+
+<form action = 'register_staff' method = 'POST'>
+{% csrf_token %}
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name">
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name">
+        <label for="email">email</label>
+        <input type="email" name="email">
+        <label for="username">Username</label>
+        <input type="text" name="username">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password">
+        <input type="submit">
+ </form>
+
+{% endblock %}
